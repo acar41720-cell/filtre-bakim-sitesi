@@ -158,27 +158,32 @@
           <div><div class="label">Telefon</div><div class="value">0850 307 88 34</div></div>
         </div>
         <div class="contact-row">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></div>
+          <div><div class="label">E-posta</div><div class="value">filtrebakimveonarim@gmail.com</div></div>
+        </div>
+        <div class="contact-row">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <div><div class="label">Çalışma Saatleri</div><div class="value">Hafta İçi 09:00 – 19:00</div></div>
         </div>
       </div>
-      <form class="form form-rect" onsubmit="alert('Talebiniz alındı, en kısa sürede dönüş yapacağız.'); return false;">
+      <form class="form form-rect" action="https://formspree.io/f/formfiltrebakim" method="POST">
+        <input type="hidden" name="_subject" value="Yeni Randevu Talebi - Filtre Bakım ve Onarım">
         <label>Ad Soyad</label>
-        <input type="text" placeholder="Adınız Soyadınız" required>
+        <input type="text" name="ad_soyad" placeholder="Adınız Soyadınız" required>
         <label>Telefon</label>
-        <input type="tel" placeholder="05XX XXX XX XX" required>
+        <input type="tel" name="telefon" placeholder="05XX XXX XX XX" required>
         <div class="form-row">
           <div>
             <label>İl</label>
-            <input type="text" placeholder="İliniz" required>
+            <input type="text" name="il" placeholder="İliniz" required>
           </div>
           <div>
             <label>İlçe</label>
-            <input type="text" placeholder="İlçeniz" required>
+            <input type="text" name="ilce" placeholder="İlçeniz" required>
           </div>
         </div>
         <label>Mesajınız</label>
-        <textarea placeholder="Talebinizi kısaca yazın"></textarea>
+        <textarea name="mesaj" placeholder="Talebinizi kısaca yazın"></textarea>
         <label class="kvkk-row">
           <input type="checkbox" required style="width:auto;">
           <span><a href="kvkk.html" style="color:var(--teal);font-weight:600;">KVKK Aydınlatma Metni</a>'ni okudum, kişisel verilerimin işlenmesini kabul ediyorum.</span>
@@ -208,6 +213,7 @@
           Filtre Bakım ve Onarım Servisi
         </div>
         <p class="about-line">Evsel su arıtma cihazlarında bakım, onarım ve filtre değişimi. Randevunuzdan servis sonrasına kadar yanınızdayız.</p>
+        <p class="about-line" style="margin-top:8px;"><a href="mailto:filtrebakimveonarim@gmail.com" style="color:inherit;">filtrebakimveonarim@gmail.com</a></p>
       </div>
       <div class="footer-col">
         <h4>Kurumsal</h4>
@@ -228,7 +234,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Filtre Bakım ve Onarım Servisi. Tüm hakları saklıdır.</span>
-      <span>0850 307 88 34</span>
+      <span>0850 307 88 34 · filtrebakimveonarim@gmail.com</span>
     </div>
   </div>
 </footer>
