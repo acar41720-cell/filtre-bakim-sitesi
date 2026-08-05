@@ -380,6 +380,25 @@
     gap: 40px;
   }
   @media(min-width:880px){ .contact-wrap{ grid-template-columns: 1fr 1.1fr; padding: 60px; } }
+
+  .contact-center{
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .contact-meta{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 32px;
+    margin-bottom: 30px;
+  }
+  .contact-meta .contact-row{ margin-bottom:0; text-align:left; }
+  .form-rect{
+    background:#fff;
+    border: 1.5px solid #E1EDEC;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(11,42,61,0.06);
+  }
   .contact-info h2{
     font-size: 27px;
     color: var(--navy);
