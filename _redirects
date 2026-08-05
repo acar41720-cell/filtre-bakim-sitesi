@@ -1,0 +1,23 @@
+# Eski Wix sitesinden Google'da hâlâ indekste olan adresler -> yeni sayfalara 301 yönlendirme
+/filtre-değişim              /hizmetler.html   301
+/filtre-degisim               /hizmetler.html   301
+/filtre-değişimi              /hizmetler.html   301
+/filtre-degisimi               /hizmetler.html   301
+/filtre-bakımı                /hizmetler.html   301
+/filtre-bakimi                 /hizmetler.html   301
+/su-arıtma-servisi            /hizmetler.html   301
+/su-aritma-servisi              /hizmetler.html   301
+/su-arıtma-bakımı             /hizmetler.html   301
+/su-aritma-bakimi               /hizmetler.html   301
+/sıkça-sorulan-sorular         /                 301
+/sikca-sorulan-sorular          /                 301
+/hizmetlerimiz                  /hizmetler.html   301
+/iletisim                       /iletisim.html    301
+/iletişim                       /iletisim.html    301
+/hakkimizda                     /hakkimizda.html  301
+/hakkımızda                     /hakkimizda.html  301
+/anasayfa                       /                 301
+/ana-sayfa                      /                 301
+
+# Bilinmeyen eski/kırık adresler ana sayfaya yönlensin
+/*                              /                 404
