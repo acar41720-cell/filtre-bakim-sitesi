@@ -740,8 +740,8 @@
 .more-link{ display:inline-block; margin-top:6px; font-size:14px; font-weight:700; color: var(--teal); text-decoration:none; }
 .more-link:hover{ color: var(--navy); }
 .svc-cta{ display:flex; flex-wrap:wrap; gap:12px; margin: 26px 0 8px; }
-.btn-ghost{ background:#fff; color: var(--navy); border: 1.5px solid var(--navy); }
-.btn-ghost:hover{ background: var(--navy); color:#fff; }
+.btn-outline{ background:#fff; color: var(--navy); border: 1.5px solid var(--navy); }
+.btn-outline:hover{ background: var(--navy); color:#fff; }
 .svc-list{ display:grid; grid-template-columns: 1fr; gap:10px; margin: 0 0 10px; padding:0; list-style:none; }
 @media(min-width:700px){ .svc-list{ grid-template-columns: 1fr 1fr; } }
 .svc-list li{ display:flex; align-items:flex-start; gap:10px; background:#fff; border:1px solid var(--ice-2); border-radius:12px; padding:14px 16px; font-size:15px; color: var(--text); line-height:1.5; }
@@ -761,3 +761,18 @@
 .svc-others a{ background: var(--ice-2); color: var(--navy); font-weight:600; font-size:14.5px; padding:10px 16px; border-radius:999px; text-decoration:none; }
 .svc-others a:hover{ background: var(--teal); color:#fff; }
 .rich-content .svc-cta + h3{ margin-top: 40px; }
+
+/* Mobil menü */
+.nav{ position: relative; }
+.nav-toggle{ display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:10px; background:transparent; border:1.5px solid rgba(255,255,255,0.25); cursor:pointer; padding:0; }
+.nav-toggle svg{ width:22px; height:22px; stroke: var(--ice); }
+@media(min-width:860px){ .nav-toggle{ display:none; } }
+@media(max-width:859px){
+  .nav-links.open{ display:flex; flex-direction:column; gap:0; position:absolute; top:100%; left:0; right:0; background: var(--navy-deep); padding: 8px 24px 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.25); }
+  .nav-links.open li a{ display:block; padding:14px 0; font-size:16px; border-bottom:1px solid rgba(255,255,255,0.08); }
+  .nav-links.open li:last-child a{ border-bottom:0; }
+}
+.kvkk-box h4{ color: var(--navy); font-size:16.5px; margin: 26px 0 8px; }
+.kvkk-box a{ color: var(--teal); font-weight:600; }
+.container.nav{ padding: 14px 24px; }
+@media(max-width:480px){ .container.nav{ padding: 12px 16px; gap:10px; } .logo{ font-size:15px; } .nav-links.open{ padding-inline:16px; } .nav-phone .btn{ padding:10px 14px !important; white-space:nowrap; } }
